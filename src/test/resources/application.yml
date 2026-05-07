@@ -1,0 +1,15 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: banking-app
+  datasource:
+    url: 'jdbc:postgresql://localhost:5432/banking_test'
+    username: 'postgres'
+    password: ''
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: 'org.hibernate.dialect.PostgreSQLDialect'
